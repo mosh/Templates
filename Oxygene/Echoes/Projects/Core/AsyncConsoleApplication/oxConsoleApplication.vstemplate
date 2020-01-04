@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:Elements="http://schemas.remobjects.com/elements/vstemplate">
+	<TemplateData>
+		<Name>Async Console Application (.NET Core)</Name>
+		<Description>A project for building an async console application</Description>
+		<Icon>Project.Echoes.Application.Console.ico</Icon>
+		<TemplateID>RemObjects.Oxygene.Echoes.Core.AsyncConsoleApplication</TemplateID>
+		<ProjectType>Oxygene</ProjectType>
+		<Elements:Type>Oxygene.Echoes</Elements:Type>
+		<RequiredFrameworkVersion>4.0</RequiredFrameworkVersion>
+		<SortOrder>11</SortOrder>
+		<NumberOfParentCategoriesToRollUp>2</NumberOfParentCategoriesToRollUp>
+		<CreateNewFolder>true</CreateNewFolder>
+		<DefaultName>ConsoleApplication</DefaultName>
+		<ProvideDefaultName>true</ProvideDefaultName>
+		<LanguageTag>RemObjects Oxygene</LanguageTag>
+		<PlatformTag>Windows</PlatformTag>
+		<PlatformTag>macOS</PlatformTag>
+		<PlatformTag>Linux</PlatformTag>
+		<ProjectTypeTag>Console</ProjectTypeTag>
+	</TemplateData>
+	<TemplateContent>
+		<Project File="Async Console Application.elements" ReplaceParameters="true">
+			<ProjectItem ReplaceParameters="true" OpenInEditor="true">Program.pas</ProjectItem>
+			<Folder Name="Properties" TargetFolderName="Properties">
+				<ProjectItem>App.ico</ProjectItem>
+				<ProjectItem ReplaceParameters="true">AssemblyInfo.pas</ProjectItem>
+				<ProjectItem ReplaceParameters="true">Resources.Designer.pas</ProjectItem>
+				<ProjectItem>Resources.resx</ProjectItem>
+				<ProjectItem ReplaceParameters="true">Settings.Designer.pas</ProjectItem>
+				<ProjectItem>Settings.settings</ProjectItem>
+			</Folder>
+		</Project>
+	</TemplateContent>
+</VSTemplate>
