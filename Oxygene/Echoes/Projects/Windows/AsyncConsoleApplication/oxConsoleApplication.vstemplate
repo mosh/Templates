@@ -18,7 +18,7 @@
 		<ProjectTypeTag>Console</ProjectTypeTag>
 	</TemplateData>
 	<TemplateContent>
-		<Project File="Console Application.elements" ReplaceParameters="true">
+		<Project File="Async Console Application.elements" ReplaceParameters="true">
 			<ProjectItem ReplaceParameters="true" OpenInEditor="true">Program.pas</ProjectItem>
 			<Folder Name="Properties" TargetFolderName="Properties">
 				<ProjectItem>App.ico</ProjectItem>
