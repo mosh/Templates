@@ -8,14 +8,21 @@ type
   AppDelegate = class(IUIApplicationDelegate)
   private
   public
+    property Coordinator:AppCoordinator;
     property window: UIWindow;
 
     method application(application: UIApplication) didFinishLaunchingWithOptions(launchOptions: NSDictionary): Boolean;
     begin
-      window := new UIWindow();
-      window.rootViewController := new UINavigationController withRootViewController(new ViewController);
-      window.makeKeyAndVisible;
-      result := true;
+      
+      window := new UIWindow;
+      
+      var controller := new ViewController;
+      
+      Coordinator := new AppCoordinator withNavigationController(new UINavigationController withRootViewController(controller)) Window(window) AppDelegate(self);
+
+      Coordinator.start;
+      
+      exit true;
     end;
 
     method applicationWillResignActive(application: UIApplication);

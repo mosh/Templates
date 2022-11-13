@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <VSTemplate Version="3.0.0" Type="Project" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:Elements="http://schemas.remobjects.com/elements/vstemplate">
 	<TemplateData>
-		<Name>Simple XIB Application (iOS)</Name>
-		<Description>A Simple XIB project.</Description>
+		<Name>A Simple XIB with AppCoordinator (iOS)</Name>
+		<Description>A Simple XIB project with AppCoordinator.</Description>
 		<Icon>Project.Toffee.Application.iOS.ico</Icon>
-		<TemplateID>RemObjects.Oxygene.Toffee.iOS.UniversalApp.SimpleXIBApp</TemplateID>
+		<TemplateID>RemObjects.Oxygene.Toffee.iOS.UniversalApp.SimpleXIBAppCoordinator</TemplateID>
 		<ProjectType>Oxygene</ProjectType>
 		<Elements:Type>Oxygene.Toffee</Elements:Type>
 		<RequiredFrameworkVersion>2.0</RequiredFrameworkVersion>
 		<SortOrder>460</SortOrder>
 		<NumberOfParentCategoriesToRollUp>0</NumberOfParentCategoriesToRollUp>
 		<CreateNewFolder>true</CreateNewFolder>
-		<DefaultName>SimpleXIBApp</DefaultName>
+		<DefaultName>SimpleXIBAppWithCoordinator</DefaultName>
 		<ProvideDefaultName>true</ProvideDefaultName>
 	</TemplateData>
 	<TemplateContent>
 		<Project File="Project.elements" ReplaceParameters="true">
+			<ProjectItem ReplaceParameters="true" OpenInEditor="true">AppCoordinator.pas</ProjectItem>
 			<ProjectItem ReplaceParameters="true" OpenInEditor="true">AppDelegate.pas</ProjectItem>
 			<ProjectItem ReplaceParameters="true" OpenInEditor="true">ViewController.pas</ProjectItem>
 			<ProjectItem ReplaceParameters="false" OpenInEditor="false">ViewController.xib</ProjectItem>
